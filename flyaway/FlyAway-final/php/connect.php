@@ -141,7 +141,6 @@
 $userName=$_POST['userName'];
 $email=$_POST['email'];
 $password=$_POST['password'];
-$conn=new mysqli('sql313.infinityfree.com','if0_36528092','pf1FRN6kprAsYdX','if0_36528092_Flights');
 if ($conn->connect_error) {
     die("Connection failed: "
         . $conn->connect_error);
