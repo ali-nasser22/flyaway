@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="img/svg" href="../imgs/plane-icon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <link rel="stylesheet" href="../css/SignUp.css">
+</head>
+<body>
+    <div class="form-box">
+        <form class="form" action="../php/connect.php" method="post">
+            <span class="title">Sign up</span>
+            <span class="subtitle">Create a free account with your email.</span>
+            <div class="form-container">
+              <input type="text" class="input" placeholder="User Name" id="user-name" name="userName">
+                    <input type="email" class="input" placeholder="Email" id="email" name="email">
+                    <input type="password" class="input" placeholder="Password" id="pass" name="password">
+            </div>
+            <input type="submit" value="Sign Up" class="button">
+        </form>
+        <div class="form-section">
+          <p>Have an account? <a href="login.html">Log in</a> </p>
+        </div>
+        </div>
+         <script>
+          let sub=document.querySelector(".button");
+          sub.addEventListener("click",()=>{
+            let vals=[...document.querySelectorAll("input")];
+            vals.forEach((e)=>{
+              if(e.value==""){
+                event.preventDefault();
+                alert("You should Enter All Fields");
+              }
+            })
+          })
+          
+        </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    background-image: url(../imgs/login-bg.jpg);
+    overflow-x: hidden;
+    position: relative;
+  }
+  .conatiner{
+    position: relative;
+  }
+  header{
+    background-color: white;
+  }
+header img{
+    width: 200px;
+    cursor: pointer;
+  }
+  @media(max-width:576px){
+    .pages{
+      transform: translateX(100px);
+    }
+  }
+  @media(min-width:577px){
+    .pages{
+      transform: translateX(90px);
+    }
+  }
+  @media(min-width:768px){
+    .pages{
+      transform: translateX(-10px);
+    }
+  }
+  @media(min-width:992px){
+    .pages{
+      transform: translateX(-120px);
+    }
+  }
+  @media(min-width:1200px){
+    .pages{
+      transform: translateX(-220px);
+    }
+  }
+  @media(min-width:1400px){
+    .pages{
+      transform: translateX(-300px);
+    }
+  }
+
+
+ .pages{
+    position: relative;
+    left: -250px;
+    top: 7px;
+ }
+  .pages :nth-child(1){
+    position: relative;
+  }
+  .pages .main:before{
+    content: "";
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    position: absolute;
+    bottom: -20px;
+    border:10px solid transparent;
+    left: 0;
+    border-color: #4050fa transparent transparent transparent;
+  }
+ 
+  .form-container{
+    background-color: #ddd;
+  }
+  #dest{
+    position: relative;
+  }
+  #from{
+    position: relative;
+  }
+  ul{
+    width:120px;
+    right: 35px;
+    top: 40px;
+    position: absolute;
+    z-index: 1000;
+  }
+  ul li{
+    cursor: pointer;
+  }
+  ul::before{
+    content: "";
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    position: absolute;
+    top: -20px;
+    border:10px solid transparent;
+    right: 5px;
+    border-color: transparent transparent #4050fa transparent;
+  }
+  .lables{
+    position: absolute;
+    transform: translateY(93px);
+  }
+  .lables .ret{
+    transform: translateX(280px);
+  }
